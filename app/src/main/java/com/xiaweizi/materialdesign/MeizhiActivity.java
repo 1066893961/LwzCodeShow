@@ -14,6 +14,9 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+/**
+ * Created by lwz on 2018/3/7.
+ */
 public class MeizhiActivity extends AppCompatActivity {
 
     public static final String FRUIT_NAME = "fruit_name";

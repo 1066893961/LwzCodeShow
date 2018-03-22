@@ -14,7 +14,10 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-public class MeizhiAdapter extends RecyclerView.Adapter<MeizhiAdapter.ViewHolder>{
+/**
+ * Created by lwz on 2018/3/7.
+ */
+public class MeizhiAdapter extends RecyclerView.Adapter<MeizhiAdapter.ViewHolder> {
 
     private static final String TAG = "MeizhiAdapter";
 
@@ -51,9 +54,9 @@ public class MeizhiAdapter extends RecyclerView.Adapter<MeizhiAdapter.ViewHolder
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 Meizhi meizhi = mMeizhiList.get(position);
-                Intent intent = new Intent(mContext, MeizhiActivity.class);
-                intent.putExtra(MeizhiActivity.FRUIT_NAME, meizhi.getName());
-                intent.putExtra(MeizhiActivity.FRUIT_IMAGE_ID, meizhi.getImageId());
+                Intent intent = new Intent(mContext, CustomViewActivity.class);
+//                intent.putExtra(MeizhiActivity.FRUIT_NAME, meizhi.getName());
+//                intent.putExtra(MeizhiActivity.FRUIT_IMAGE_ID, meizhi.getImageId());
                 mContext.startActivity(intent);
             }
         });

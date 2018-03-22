@@ -1,5 +1,8 @@
 package com.xiaweizi.materialdesign;
 
+/**
+ * Created by lwz on 2018/3/7.
+ */
 public class Meizhi {
 
     private String name;

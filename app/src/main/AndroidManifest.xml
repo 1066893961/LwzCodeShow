@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MeizhiActivity"/>
+        <activity android:name=".CustomViewActivity"/>
     </application>
 
 </manifest>
