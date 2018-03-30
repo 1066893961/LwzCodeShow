@@ -47,15 +47,17 @@ public class MyView extends View {
     //注意，触摸事件的响应范围仅限于该View的区域
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        int x = (int) event.getRawX();
+        int y = (int) event.getRawY();
         //Log.e("onTouchEvent执行","true");
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 //Log.e("ACTION","down");
                 //获取手指落下的坐标并保存
-                rawX = (int) (event.getRawX());
-                rawY = (int) (event.getRawY());
-                lastX = rawX;
-                lastY = rawY;
+//                rawX = (int) (event.getRawX());
+//                rawY = (int) (event.getRawY());
+//                lastX = rawX;
+//                lastY = rawY;
                 break;
             case MotionEvent.ACTION_MOVE:
                 //Log.e("ACTION","move");
