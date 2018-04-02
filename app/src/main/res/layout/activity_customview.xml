@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hc="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -8,7 +9,8 @@
         android:id="@+id/view2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ffffff" />
+        android:background="#ffffff"
+        android:visibility="gone" />
     <!-- 我们给View设置一个蓝色的背景，方便比较View的区域和我们绘制的圆的区域 -->
 
     <LinearLayout
@@ -16,36 +18,73 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="@drawable/bg_answer"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="@string/app_name"
+            android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:padding="5dp"
             android:background="@drawable/brand_tv_tag_bg"
-            android:layout_height="wrap_content" />
+            android:padding="5dp"
+            android:text="@string/app_name" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="@string/app_name"
-            android:padding="5dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/brand_tv_tag_bg"
-            android:layout_height="wrap_content" />
+            android:padding="5dp"
+            android:text="@string/app_name" />
+
         <TextView
             android:layout_width="wrap_content"
-            android:text="@string/app_name"
-            android:padding="5dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/brand_tv_tag_bg"
-            android:layout_height="wrap_content" />
+            android:padding="5dp"
+            android:text="@string/app_name" />
+
         <TextView
             android:layout_width="wrap_content"
-            android:text="a"
-            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/brand_tv_tag_bg"
             android:minWidth="30dp"
-            android:background="@drawable/brand_tv_tag_bg"
-            android:layout_height="wrap_content" />
+            android:padding="5dp"
+            android:text="a" />
 
     </LinearLayout>
+
+    <com.xiaweizi.materialdesign.view.MyCustomView1
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        hc:default_size="200dp" />
+
+    <com.xiaweizi.materialdesign.view.MyCustomViewGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff9900">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:text="123"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:text="456"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#ff0000"
+            android:text="789"
+            android:textColor="#000000" />
+
+    </com.xiaweizi.materialdesign.view.MyCustomViewGroup>
 
 </LinearLayout>
