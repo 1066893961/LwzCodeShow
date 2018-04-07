@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
 import android.view.View;
 
 /**
@@ -45,7 +44,7 @@ public class MyView extends View {
     }
 
     //注意，触摸事件的响应范围仅限于该View的区域
-    @Override
+ /*   @Override
     public boolean onTouchEvent(MotionEvent event) {
         int x = (int) event.getRawX();
         int y = (int) event.getRawY();
@@ -81,7 +80,7 @@ public class MyView extends View {
                 break;
         }
         return true;
-    }
+    }*/
 
     //简单的重写onMeasure
     @Override

@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.xiaweizi.materialdesign.view.MyView2
+    <com.xiaweizi.materialdesign.view.MyView
         android:id="@+id/view2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:visibility="gone" />
+        android:visibility="visible" />
     <!-- 我们给View设置一个蓝色的背景，方便比较View的区域和我们绘制的圆的区域 -->
 
     <LinearLayout
@@ -62,7 +62,8 @@
     <com.xiaweizi.materialdesign.view.MyCustomViewGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ff9900">
+        android:background="#ff9900"
+        android:visibility="gone">
 
         <TextView
             android:layout_width="100dp"
