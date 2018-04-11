@@ -3,14 +3,64 @@
     xmlns:hc="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/bottom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="138dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="asdasdasddddddddd"
+                android:textColor="#dd2222" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sadsadddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+                android:textColor="#dd2222" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/top_ll"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            hc:cardCornerRadius="8dp"
+            hc:cardElevation="8dp"
+            hc:contentPadding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                android:textColor="#ddee22" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
 
     <com.xiaweizi.materialdesign.view.MyView
         android:id="@+id/view2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#ffffff"
-        android:visibility="visible" />
+        android:visibility="gone" />
     <!-- 我们给View设置一个蓝色的背景，方便比较View的区域和我们绘制的圆的区域 -->
 
     <LinearLayout
