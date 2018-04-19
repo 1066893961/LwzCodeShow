@@ -117,5 +117,23 @@ public class CustomViewActivity extends AppCompatActivity {
         return (int) (dpValue * scale + 0.5f);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mTopLl.post(new Runnable() {
+            @Override
+            public void run() {
+                int h = mTopLl.getHeight();
+                int w = mTopLl.getWidth();
+            }
+        });
 
+        mBottomLl.post(new Runnable() {
+            @Override
+            public void run() {
+                int h = mBottomLl.getHeight();
+                int w = mBottomLl.getWidth();
+            }
+        });
+    }
 }

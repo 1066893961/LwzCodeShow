@@ -43,16 +43,37 @@
             hc:cardCornerRadius="8dp"
             hc:cardElevation="8dp"
             hc:contentPadding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                 android:textColor="#ddee22" />
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bbbbbb"
+                android:textColor="#ddee22" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                android:textColor="#ddee22" />
+            </LinearLayout>
         </android.support.v7.widget.CardView>
 
     </RelativeLayout>
+
+    <com.xiaweizi.materialdesign.view.CircleView
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:layout_height="100dp" />
 
 
     <com.xiaweizi.materialdesign.view.MyView
